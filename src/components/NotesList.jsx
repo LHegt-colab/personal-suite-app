@@ -96,16 +96,16 @@ function NotesList({ notes, onEdit, onDelete, onToggleFavorite }) {
           </div>
 
           {/* Actions */}
-          <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
             <button
               onClick={() => onEdit(note)}
-              className="flex-1 text-accent hover:text-accent-dark text-sm font-medium py-1 px-2 border border-accent rounded hover:bg-accent/10 transition-colors"
+              className="flex-1 px-4 py-2 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent-dark transition-colors shadow-sm hover:shadow-md"
             >
               Bewerken
             </button>
             <button
               onClick={() => onDelete(note.id)}
-              className="flex-1 text-red-600 hover:text-red-800 text-sm font-medium py-1 px-2 border border-red-600 rounded hover:bg-red-50 transition-colors"
+              className="flex-1 px-4 py-2 bg-red-500 text-white text-sm font-medium rounded-lg hover:bg-red-600 transition-colors shadow-sm hover:shadow-md"
             >
               Verwijderen
             </button>
