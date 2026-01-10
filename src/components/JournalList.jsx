@@ -28,7 +28,7 @@ function JournalList({ entries, onEdit, onDelete }) {
             <div className="flex gap-2">
               <button
                 onClick={() => onEdit(entry)}
-                className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                className="text-accent hover:text-accent-dark text-sm font-medium"
               >
                 Bewerken
               </button>

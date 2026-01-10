@@ -87,7 +87,7 @@ function JournalForm({ entry, onClose, onSuccess }) {
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                 placeholder="Geef je dagboek entry een titel..."
                 required
               />
@@ -116,7 +116,7 @@ function JournalForm({ entry, onClose, onSuccess }) {
                   type="button"
                   onClick={getLocation}
                   disabled={locationLoading}
-                  className="text-sm text-blue-600 hover:text-blue-800 font-medium disabled:text-gray-400"
+                  className="text-sm text-accent hover:text-accent-dark font-medium disabled:text-gray-400"
                 >
                   {locationLoading ? 'Ophalen...' : 'Huidige locatie ophalen'}
                 </button>
@@ -160,7 +160,7 @@ function JournalForm({ entry, onClose, onSuccess }) {
               <button
                 type="submit"
                 disabled={saving}
-                className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+                className="flex-1 bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-dark disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors shadow-md"
               >
                 {saving ? 'Opslaan...' : entry ? 'Bijwerken' : 'Opslaan'}
               </button>

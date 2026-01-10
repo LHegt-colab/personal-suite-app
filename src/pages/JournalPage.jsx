@@ -83,10 +83,10 @@ function JournalPage() {
   return (
     <div>
       <div className="mb-6 flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-gray-900">Mijn Dagboek</h2>
+        <h2 className="text-2xl font-bold text-primary">Mijn Dagboek</h2>
         <button
           onClick={handleAddNew}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          className="bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-dark transition-colors shadow-md"
         >
           + Nieuwe Entry
         </button>
@@ -98,7 +98,7 @@ function JournalPage() {
           placeholder="Zoek in je dagboek..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
         />
       </div>
 
