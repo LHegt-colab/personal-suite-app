@@ -1,13 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --color-primary: #1a5f5f;
-  --color-primary-light: #2a7f7f;
-  --color-primary-dark: #0a4f4f;
-  --color-accent: #4dd0e1;
-  --color-accent-light: #6dd9e8;
-  --color-accent-dark: #2dc7d8;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;

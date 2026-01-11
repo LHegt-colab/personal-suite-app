@@ -4,10 +4,12 @@ function Navigation() {
   const navItems = [
     { to: '/journal', label: 'Dagboek' },
     { to: '/notes', label: 'Notities' },
-    // Future items will be added here:
-    // { to: '/todos', label: 'Todo' },
-    // { to: '/calendar', label: 'Afspraken' },
-    // { to: '/knowledge', label: 'Kennisbase' },
+    { to: '/todos', label: 'Todo' },
+    { to: '/calendar', label: 'Agenda' },
+    { to: '/knowledge', label: 'Kennisbase' },
+    { to: '/bookmarks', label: 'Bookmarks' },
+    { to: '/contacts', label: 'Contacten' },
+    { to: '/blood-pressure', label: 'Bloeddruk' },
   ]
 
   return (
